@@ -9,7 +9,7 @@
     <div class="container">
       <header class="main-header">
         <div class="logo"><a><img src="img/logo.png" width="138" height="70"  alt="Седона"></a></div>
-        <nav class="main-navigation">
+        <nav class="main-navigation clearfix">
           <ul>
             <li>
               <a href="#">Информация</a>
@@ -36,15 +36,17 @@
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
 
-      <div class="features">
+      <div class="features clearfix">
         <div class="features-item item-1">
-          <h2>Настоящий городок</h2>
-          <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          <div class="item">
+            <h2>Настоящий городок</h2>
+            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
         </div>
-        <img src="img/photo-1.jpeg" width="800" height="256" alt="Седона - вид города">
+        <img class="img-1" src="img/photo-1.jpeg" width="800" height="256" alt="Седона - вид города">
       </div>
 
-      <div class="triggers">
+      <div class="triggers clearfix">
         <div class="trigger-item">
           <h2>Жилье</h2>
           <p>Рекомендуем пожить в настоящем отеле, все как в кино!</p>
@@ -59,60 +61,72 @@
         </div>
       </div>
 
-      <div class="features">
-        <img src="img/photo-2.jpeg" width="800" height="256" alt="Мост дьявола">
+      <div class="features clearfix">
+        <img  class="img-2" src="img/photo-2.jpeg" width="800" height="256" alt="Мост дьявола">
           <div class="features-item item-2">
-          <h2>Там есть Мост дьявола</h2>
-          <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+            <div class="item">
+              <h2>Там есть Мост дьявола</h2>
+              <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+            </div>
         </div>
       </div>
 
-      <div class="feature">
+      <div class="feature clearfix">
         <div class="features-item item-3">
-          <h2>Небольшая площадь</h2>
-          <p>Все достопримечательности находятся очень близко</p>
+          <div class="item">
+            <h2>Небольшая площадь</h2>
+            <p>Все достопримечательности находятся очень близко</p>
+          </div>
         </div>
         <div class="features-item item-4">
-          <h2>Красивая дорога</h2>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <div class="item">
+            <h2>Красивая дорога</h2>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
         </div>
         <div class="features-item item-5">
-          <h2>Мало туристов</h2>
-          <p>Большинство едет в Гранд Каньон и толпится там</p>
+          <div class="item">
+            <h2>Мало туристов</h2>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
         </div>
       </div>
 
-      <div class="search-hotel">
-        <b>Заинтересовались?</b>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-
-        <a href="#">Поиск гостиницы в Седоне</a>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <div class="arrival-date">
-            <label for="arrival-date">Дата заезда</label> 
-            <input type="date" name="arrival" id="arrival-date">
-          </div>
-          <div class="exit-date">
-            <label for="exit-date">Дата Выезда</label> 
-            <input type="date" name="exit" id="exit-date">
-          </div>
-          <div class="adults">
-            <label for="adults-field">Взрослые</label>
-            <input type="number" name="adults" id="adults-field" value="1">
-          </div>
-          <div class="children">
-            <label for="children-field">Дети</label>
-            <input type="number" name="children" id="children-field" value="1">
-          </div>
-            <div class="buttons">
-            <input type="submit" value="Найти">
-          </div>
-        </form>
+      <div class="search-hotel-map">
+        <div class="search-hotel-intro">
+          <b>Заинтересовались?</b>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </div>
+        
+        <div class="search-form clearfix">
+          <div class="btn-search"><a href="#">Поиск гостиницы в Седоне</a></div>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <div class="arrival-date">
+              <label for="arrival-date">Дата заезда</label> 
+              <input type="date" name="arrival" id="arrival-date">
+            </div>
+            <div class="exit-date">
+              <label for="exit-date">Дата Выезда</label> 
+              <input type="date" name="exit" id="exit-date">
+            </div>
+            <div class="adults">
+              <label for="adults-field">Взрослые</label>
+              <input type="number" name="adults" id="adults-field" value="1">
+            </div>
+            <div class="children">
+              <label for="children-field">Дети</label>
+              <input type="number" name="children" id="children-field" value="1">
+            </div>
+              <div class="buttons">
+              <input type="submit" value="Найти">
+            </div>
+          </form>
+        </div>
       </div>
 
       <div class="map"></div>
 
-      <footer class="main-footer">
+      <footer class="main-footer clearfix">
         <div class="hashtag"><a href="#"><span>#visitsedona</span></a></div>
         <div class="footer-social">
           <a class="social-btn social-btn-tw" href="#">Twitter</a>
