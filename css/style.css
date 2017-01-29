@@ -2,7 +2,7 @@ body {
   font-style: regular;
   font-size: 14px;
   line-height: 21px;
-  font-family: "PTSans", sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   color: #333333;
 }
 
@@ -10,7 +10,6 @@ li {
   font-style: bold;
   font-size: 14px;
   line-height: 26px;
-  font-family: "PTSans", sans-serif;
   color: #000000;
 }
 
@@ -18,6 +17,5 @@ li {
   font-style: bold;
   font-size: 21px;
   line-height: 26px;
-  font-family: "PTSans", sans-serif;
   color: #000000;
 }
