@@ -14,17 +14,17 @@ body {
 
 nav ul {
   margin: 0;
-  width: 1056px;
+  width: 1200px;
   padding: 20px 72px;
   font-size: 0;
   list-style: none;
+  box-sizing: border-box;
 }
 
 nav li {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  color: #000000;
   width: 240px;
   float: left;
 }
@@ -68,10 +68,6 @@ nav li:last-child {
   transform: translateX(-50%);
 }
 
-.main-navigation {
-  background-color: #ffeea0;
-}
-
 .promo {
   background-color: #81b3d2;
   width: 1200px;
@@ -101,13 +97,12 @@ nav li:last-child {
 }
 
 .features {
-  background-color: #cfe09b;
+  background-color: #81b3d2;
   width: 1200px;
-  min-height: 256px;
+  color: white;
 }
 
 .features-item {
-  background-color: #81b3d2;
   float: left;
   width: 400px;
   box-sizing: border-box;
@@ -138,6 +133,11 @@ nav li:last-child {
   float: left;
 }
 
+.feature {
+  background-color: #eeeeee;
+  width: 1200px;
+}
+
 .search-hotel-map {
   background-color: #ffeea0;
   width: 576px;
@@ -155,7 +155,7 @@ nav li:last-child {
 }
 
 .btn-search {
-  background-color: #81b3d2;
+  background-color: #766357;
   width: 576px;
   min-height: 86px;
 }
@@ -167,7 +167,6 @@ nav li:last-child {
 }
 
 .main-footer {
-  background-color: #ffeea0;
   padding-top: 35px;
   padding-bottom: 35px;
 }
@@ -232,6 +231,7 @@ nav li:last-child {
 .nav-sorting {
   background-color: #ffffff;
   float: left;
+  width: 750px;
 }
 
 .sort-selection {
@@ -277,6 +277,7 @@ nav li:last-child {
 .about-hotel {
   background-color: #e8e8e8;
   float: left;
+  width: 750px;
 }
 
 .rating {
