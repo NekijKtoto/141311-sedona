@@ -8,6 +8,10 @@ body {
   background-color: #f2f2f2;
 }
 
+.container {
+  background-color: #ffffff;
+}
+
 nav ul {
   margin: 0;
   width: 1056px;
@@ -115,7 +119,6 @@ nav li:last-child {
 }
 
 .trigger-item {
-  background-color: #e8e8e8;
   float: left;
   width: 400px;
   text-align: center;
