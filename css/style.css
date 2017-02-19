@@ -174,7 +174,7 @@ body {
   font-family: "PTSans", Arial, sans-serif;
   text-transform: uppercase;
   vertical-align: top;
-  
+
   color: #000000;
 }
 
@@ -334,13 +334,63 @@ body {
 
 .search-form input:focus {
   background-color: #ffffff;
-  border: solid 2px #e5e5e5;
+  outline: solid 2px #e5e5e5;
+}
+
+.arrival-date-field,
+.exit-date-field {
+  position: relative;
+  display: inline-block;
+  width: 346px;
+}
+
+.search-form .date-calendar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 39px;
+  height: 38px;
+  padding: 8px 9px;
+  
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+}
+
+.search-form .date-calendar:focus {
+  background-color: #ffffff;
+  outline: solid 2px #e5e5e5;
+}
+
+.search-form .date-calendar::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 22px;
+  background-position: -5px -5px;
+}
+
+.search-form .date-calendar:hover::before {
+  width: 21px;
+  height: 22px;
+  background-position: -67px -5px;
+}
+
+.search-form .date-calendar:active::before {
+  width: 21px;
+  height: 22px;
+  background-position: -36px -5px;
 }
 
 .arrival-date input,
 .exit-date input {
-  width: 346px;
-  padding: 11px 12px;
+  width: 100%;
+  padding: 6px 12px;
   padding-right: 40px;
   box-sizing: border-box;
 }
@@ -361,21 +411,38 @@ body {
   margin-bottom: 29px;
 }
 
-.number input {
-  
+.adults-field,
+.children-field {
+  position: relative;
+  display: inline-block;
   width: 114px;
-  padding: 11px 37px;
-  box-sizing: border-box;
-  text-align: center;
 }
 
-.number-field::before {
+.number .minus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 37px;
+  height: 38px;
+  padding: 17px 13px;
+
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+}
+
+.number .minus:focus {
+  background-color: #ffffff;
+  outline: solid 2px #e5e5e5;
+}
+
+.number .minus::before {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: yellow;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   width: 12px;
@@ -383,9 +450,68 @@ body {
   background-position: -1126px -5px;
 }
 
-.number input::after {
-
+.number .minus:hover::before {
+  width: 12px;
+  height: 3px;
+  background-position: -1170px -5px;
 }
+
+.number .minus:active::before {
+  width: 12px;
+  height: 3px;
+  background-position: -1148px -5px;
+}
+
+.number .plus {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 37px;
+  height: 38px;
+  padding: 8px 13px;
+
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+}
+
+.number .plus:focus {
+  background-color: #ffffff;
+  outline: solid 2px #e5e5e5;
+}
+
+.number .plus::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 11px;
+  background-position: -1192px -5px;
+}
+
+.number .plus:hover::before {
+  width: 11px;
+  height: 11px;
+  background-position: -1234px -5px;
+}
+
+.number .plus:active::before {
+  width: 11px;
+  height: 11px;
+  background-position: -1213px -5px;
+}
+
+.number input {
+  width: 100%;
+  padding: 6px 12px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
 .adults {
   margin-right: 27px;
 }
@@ -1075,7 +1201,7 @@ a.active {
 
 .stars {
   font-size: 0;
-  margin-bottom: 54px;
+  margin-bottom: 47px;
   
 }
 
@@ -1106,10 +1232,13 @@ a.active {
 }
 
 .rating-item {
+  padding: 6px 17px;
   font-style: normal;
   font-size: 14px;
   line-height: 21px;
   font-family: "PTSans", Arial, sans-serif;
   text-transform: uppercase;
+
   color: #666666;
+  background-color: #f2f2f2;
 }

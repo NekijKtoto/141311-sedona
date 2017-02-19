@@ -99,18 +99,34 @@
           <div class="btn-search"><a href="#">Поиск гостиницы в Седоне</a></div>
           <form action="https://echo.htmlacademy.ru" method="post">
             <div class="arrival-date">
-              <label for="arrival-date-field">Дата заезда</label> 
-              <input type="text" name="arrival" id="arrival-field" value="24 апреля 2017">
+              <label for="arrival-date">Дата заезда</label>
+              <div class="arrival-date-field">
+                <button class="date-calendar" type="button"></button>
+                <input type="text" name="arrival" id="arrival-date" value="24 апреля 2017"> 
+              </div> 
             </div>
             <div class="exit-date">
-              <label for="exit-date-field">Дата Выезда</label> 
-              <input type="text" name="exit" id="exit-date-field" value="4 июля 2017">
+              <label for="exit-date">Дата Выезда</label>
+              <div class="exit-date-field">
+                <button class="date-calendar" type="button"></button>
+                <input type="text" name="exit" id="exit-date-field" value="4 июля 2017">
+              </div> 
+              
             </div>
             <div class="number">
               <label class="adults" for="adults-field">Взрослые</label>
-              <input class="adults-field number-field" type="text" name="adults" id="adults-field" value="2">
+              <div class="adults-field">
+                <button class="minus" type="button"></button>
+                <input class="adults-field number-field" type="text" name="adults" id="adults-field" value="2">
+                <button class="plus" type="button"></button>
+              </div> 
+              
               <label class="children" for="children-field">Дети</label>
-              <input class="children-field number-field" type="text" name="children" id="children-field" value="0">
+              <div class="children-field">
+                <button class="minus" type="button"></button>
+                <input class="children-field number-field" type="text" name="children" id="children-field" value="0">
+                <button class="plus" type="button"></button>
+              </div>
             </div>
             <button class="btn" type="submit">Найти</button>
           </form>
