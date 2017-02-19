@@ -353,7 +353,6 @@ body {
 
 .search-form form {
   position: absolute;
-  background-color: #ffffff;
   width: 568px;
   padding: 55px 55px;
 
@@ -363,7 +362,7 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   color: #000000;
-
+  background-color: #ffffff;
   box-sizing: border-box;
 }
 
