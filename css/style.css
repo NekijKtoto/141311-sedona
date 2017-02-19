@@ -276,6 +276,7 @@ body {
 
 .search-form {
   position: relative;
+  z-index: 10;
   width: 568px;
   margin: 0 auto;
 }
@@ -557,8 +558,16 @@ body {
 }
 
 .map {
+  position: relative;
   background-color: #ffffff;
   width: 1200px;
+}
+
+.map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .main-footer {
