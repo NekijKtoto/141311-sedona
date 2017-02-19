@@ -99,24 +99,20 @@
           <div class="btn-search"><a href="#">Поиск гостиницы в Седоне</a></div>
           <form action="https://echo.htmlacademy.ru" method="post">
             <div class="arrival-date">
-              <label for="arrival-date">Дата заезда</label> 
-              <input type="date" name="arrival" id="arrival-date">
+              <label for="arrival-date-field">Дата заезда</label> 
+              <input type="text" name="arrival" id="arrival-field" value="24 апреля 2017">
             </div>
             <div class="exit-date">
-              <label for="exit-date">Дата Выезда</label> 
-              <input type="date" name="exit" id="exit-date">
+              <label for="exit-date-field">Дата Выезда</label> 
+              <input type="text" name="exit" id="exit-date-field" value="4 июля 2017">
             </div>
-            <div class="adults">
-              <label for="adults-field">Взрослые</label>
-              <input type="number" name="adults" id="adults-field" value="1">
+            <div class="number">
+              <label class="adults" for="adults-field">Взрослые</label>
+              <input class="adults-field number-field" type="text" name="adults" id="adults-field" value="2">
+              <label class="children" for="children-field">Дети</label>
+              <input class="children-field number-field" type="text" name="children" id="children-field" value="0">
             </div>
-            <div class="children">
-              <label for="children-field">Дети</label>
-              <input type="number" name="children" id="children-field" value="1">
-            </div>
-            <div class="btn">
-              <input type="submit" value="Найти">
-            </div>
+            <button class="btn" type="submit">Найти</button>
           </form>
         </div>
       </div>

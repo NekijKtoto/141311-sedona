@@ -7,17 +7,19 @@ body {
   line-height: 21px;
   font-family: "PTSans", Arial, sans-serif;
   text-transform: uppercase;
+
   color: #333333;
   background-color: #f2f2f2;
 }
 
 .container {
   background-color: #ffffff;
+  box-shadow: 0 0 15px -5px #000101;
 }
 
 .main-navigation a {
-  color: #000000;
   text-decoration: none;
+  color: #000000;
 }
 
 .main-navigation a:hover {
@@ -65,15 +67,14 @@ body {
 
 .clearfix::after {
   content: "";
-
   display: table;
   clear: both;
 }
 
 .container {
-  background-color: #ffffff;
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .logo {
@@ -100,6 +101,7 @@ body {
   padding-top: 62px;
   padding-bottom: 55px;
   box-sizing: border-box;
+
   text-align: center;
 }
 
@@ -109,6 +111,7 @@ body {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+
   color: #000000;
 }
 
@@ -122,20 +125,23 @@ body {
   line-height: 21px;
   font-family: "PTSans", Arial, sans-serif;
   text-transform: uppercase;
+
   color: #333333;
 }
 
 .features {
-  background-color: #81b3d2;
   width: 1200px;
+
   color: white;
+  background-color: #81b3d2;
 }
 
 .features-item {
-  float: left;
   width: 400px;
-  box-sizing: border-box;
+  float: left;
   padding: 54px 52px;
+  box-sizing: border-box;
+  
   text-align: center;
   vertical-align: middle;
 }
@@ -168,6 +174,7 @@ body {
   font-family: "PTSans", Arial, sans-serif;
   text-transform: uppercase;
   vertical-align: top;
+  
   color: #000000;
 }
 
@@ -186,8 +193,6 @@ body {
 
 .trigger-item {
   position: relative;
-  
-  
 }
 
 .trigger-item::before {
@@ -202,8 +207,8 @@ body {
   vertical-align: top;
   text-decoration: none;
 
- top: 61px;
- left: 50%;
+  top: 61px;
+  left: 50%;
   transform: translate(-50%, 0);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
@@ -298,19 +303,131 @@ body {
   width: 568px;
   padding: 55px 55px;
 
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PTSans", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+
   box-sizing: border-box;
 }
 
-.search-form .btn input {
-  width: 100%;
+.search-form input {
+  display: inline-block;
+  background-color: #f2f2f2;
+  border: none;
 
-  font-size: 21px;
   font-weight: bold;
+  font-size: 14px;
   line-height: 26px;
-  color: #ffffff;
+  font-family: "PTSans", Arial, sans-serif;
   text-transform: uppercase;
+  color: #000000;
+  vertical-align: middle;
+}
 
+.search-form input:hover {
+  background-color: #ebebeb;
+  border: none;
+}
+
+.search-form input:focus {
+  background-color: #ffffff;
+  border: solid 2px #e5e5e5;
+}
+
+.arrival-date input,
+.exit-date input {
+  width: 346px;
+  padding: 11px 12px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.arrival-date label {
+  margin-right: 9px;
+}
+
+.arrival-date {
+  margin-bottom: 29px;
+}
+
+.exit-date label {
+  margin-right: 4px;
+}
+
+.exit-date {
+  margin-bottom: 29px;
+}
+
+.number input {
+  
+  width: 114px;
+  padding: 11px 37px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.number-field::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: yellow;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 3px;
+  background-position: -1126px -5px;
+}
+
+.number input::after {
+
+}
+.adults {
+  margin-right: 27px;
+}
+
+.children {
+  margin-right: 27px;
+}
+
+.adults-field {
+  margin-right: 44px;
+}
+
+.number {
+  margin-bottom: 29px;
+}
+
+.search-form .btn {
+  display: inline-block;
+  width: 100%;
+  padding: 18px 0;
+
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PTSans", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #f2f2f2;
+  text-decoration: none;
+  
   background-color: #81b3d2;
+  border: none;
+  cursor: pointer;
+}
+
+.search-form .btn:hover {
+  background-color: #669ec0;
+}
+
+.search-form .btn:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
 }
 
 .map {
