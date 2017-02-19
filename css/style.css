@@ -1211,13 +1211,11 @@ a.active {
 
 .stars {
   font-size: 0;
-  margin-bottom: 47px;
-  
 }
 
 .stars span {
   position: relative;
-  display: block;
+  display: inline-block;
   float: right;
   width: 18px;
   height: 17px;
@@ -1226,6 +1224,7 @@ a.active {
 
 .stars span:first-child {
   margin-right: 0;
+  margin-bottom: 40px;
 }
 
 .stars span::before {
@@ -1242,6 +1241,7 @@ a.active {
 }
 
 .rating-item {
+  display: inline-block;
   padding: 6px 17px;
   font-style: normal;
   font-size: 14px;
