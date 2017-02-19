@@ -409,7 +409,6 @@ body {
 }
 
 .search-form .date-calendar:focus {
-  background-color: #ffffff;
   outline: solid 2px #e5e5e5;
 }
 
