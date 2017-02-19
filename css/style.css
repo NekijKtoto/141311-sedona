@@ -561,13 +561,14 @@ body {
   position: relative;
   background-color: #ffffff;
   width: 1200px;
+  height: 472px;
 }
 
-.map img {
+.map iframe {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 5;
 }
 
 .main-footer {
