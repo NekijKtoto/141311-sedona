@@ -354,7 +354,28 @@ body {
 }
 
 .search-form form {
+  display: none;
+}
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(-400px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.js-open-form {
   position: absolute;
+  display: block;
+  animation: bounce 0.6s;
   width: 568px;
   padding: 55px 55px;
 
