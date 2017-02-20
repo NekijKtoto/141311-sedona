@@ -424,11 +424,9 @@ body {
 .search-form .date-calendar::before {
   content: "";
   position: absolute;
-  /*top: 50%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);*/
-  margin-left: -10.5px;
-  margin-top: -11px;
+  transform: translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   width: 21px;
@@ -518,11 +516,9 @@ body {
 .number .minus::before {
   content: "";
   position: absolute;
-  /*top: 50%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);*/
-  margin-left: -6px;
-  margin-top: -1.5px;
+  transform: translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   width: 12px;
@@ -559,10 +555,8 @@ body {
   content: "";
   position: absolute;
   top: 50%;
-  right: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  /*margin-left: -5.5px;
-  margin-top: -5.5px;*/
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   width: 11px;
