@@ -372,7 +372,7 @@ body {
   }
 }
 
-.js-open-form {
+.search-form .js-open-form {
   position: absolute;
   display: block;
   animation: bounce 0.6s;
@@ -445,6 +445,7 @@ body {
 .search-form .date-calendar::before {
   content: "";
   position: absolute;
+  display: block;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -537,6 +538,7 @@ body {
 .number .minus::before {
   content: "";
   position: absolute;
+  display: block;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -575,6 +577,7 @@ body {
 .number .plus::before {
   content: "";
   position: absolute;
+  display: block;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
